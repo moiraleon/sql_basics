@@ -151,3 +151,52 @@ WHERE keyvalue = 1;
 DELETE is permanent!
 DELETE FROM.table name..WHERE
 
+CREATING DATABASE TABLES AND DATABASES
+
+
+CREATE DATABASE name;
+USE DATABASE name;
+SELECT * from name; to display table
+perform other commands
+
+
+USE database_name
+
+CREATE TABLE name(column_name TYPE, ...)---------(INTEGER, VARCHAR etc)
+
+
+NULL VS NOT NULL
+ie.. (column_name TYPE NOT NULL, ...)
+
+
+PRIMARY KEY
+(column_name TYPE PRIMARY KEY, ...) normall PK_column_name
+
+CONSTRAINT
+
+(CONSTRAINT PK_column_name TYPE PRIMARY KEY, ...) can be added at end 
+
+ALTER TABLE
+
+ALTER TABLE
+table_name
+ADD something (value type)
+
+ALTER TABLE email_address
+ADD CONSTRAINT
+FK_email_address
+FOREIGN KEY
+(email_address_person_id)
+REFERENCES
+person
+(person_id);
+cannot place constraint in the table you are making becasue it hasnt been made yet
+
+
+DROP TABLE - permanent
+tables cant be dropped while relational references still exist
+
+DROP TABLE name;
+ 
+
+ 
