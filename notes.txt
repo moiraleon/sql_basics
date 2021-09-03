@@ -103,7 +103,32 @@ FROM person p
 GROUP BY p.person_first_name
 HAVING FIRSTNAMECOUNT >1; allows us to hone in on data
 
+THE JOIN CLAUSE 
+
+CROSS JOIN NO NO!
+
+INNER JOIN -joining two tables on  common value - does not work with null values
+
+SELECT 
+p.first_name, p.last_name, e.email_address
+FROM person p,
+INNER JOIN 
+email_address e 
+ON
+p.person_id =e.email_address_person_id
+
+OUTER JOIN -works with null values
 
 
+LEFT OUTER JOIN   values|null
+RIGHT OUTER JOIN  null|values
 
 
+FULL OUTER JOIN includes everything allowing tables to include null values throughout
+MYSQL does not support FULL OUTER JOIN
+
+IF want both left and right nulls ie full ouer joining
+
+create two requests and join with UNION DISTINCT key word
+
+SELF JOINS are great with hierarchal data where we want to link a manager code to its employees
