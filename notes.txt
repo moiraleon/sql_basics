@@ -12,3 +12,31 @@ DELETE statment,DELETE FROM table_name WHERE id=1;
 
 table names are usually singular
 colums are prefixed ny table name ie. person_last_name
+
+SELECT STATEMENT
+        [select list]
+SELECT 'Hello','World'
+[slect keyword][select clause]
+
+
+SELECT * FROM table_name (wild card select all)
+
+finding a value from a specific table
+SELECT person.first_name from person;
+
+ALIAS to save typing
+
+SELECT p.first_name, p.last_name FROM person p;
+
+USE table_name at top will direct sql requests that follow to specific database
+ 
+
+ALIAS column names
+USE contacts;
+SELECT p.person_last_name as LastName;
+FROM person p;
+
+you can also right click on database to set as default or set new sequel tab for that database
+
+SELECT DISTINCT - takes all values that would have been returned and only return one row for each DISTINCT value, Distinct can also be applied to multiple columns and provides a distinct combination
+
