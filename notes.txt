@@ -40,3 +40,24 @@ you can also right click on database to set as default or set new sequel tab for
 
 SELECT DISTINCT - takes all values that would have been returned and only return one row for each DISTINCT value, Distinct can also be applied to multiple columns and provides a distinct combination
 
+WHERE clause
+
+SELECT p.last_name
+FROM person p
+WHERE p.first_name ='Jon';
+
+AND OR keywords
+BETWEEN, LIKE, IN, IS, IS NOT keywords
+
+LIKE is a fuzzy match J% where name begins with J  syntax LIKE '%J'
+
+IN is for looking for multiple values
+
+WHERE State  IN('AZ','CA','MT')
+
+without las name or phone number
+WHERE phone IS NULL;
+
+or IS NOT NULL;
+
+Where clause exists to restrict the result of our queries
