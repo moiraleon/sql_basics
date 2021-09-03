@@ -61,3 +61,49 @@ WHERE phone IS NULL;
 or IS NOT NULL;
 
 Where clause exists to restrict the result of our queries
+
+
+
+ORDER BY and GROUP BY CLAUSES
+
+ORDER by is alphabetical
+
+SET funtions 
+
+MAX MIN AVG SUM 
+
+SELECT COUNT(p.person_first_name)
+FROM person p
+WHERE p.person_last_name = 'Leon';'
+
+
+GETTTING COUNT OF DISTINCT FIRST NAMES 
+SELECT COUNT (DISTINCT p.person_first_name)
+FROM person p;
+
+
+
+SELECT COUNT(p.person_first_name), p.person_first_name
+FROM person p
+GROUP BY p.person_first_name
+
+(group of each name and how many)
+
+HAVING adds specification
+ex
+SELECT COUNT(p.person_first_name), p.person_first_name
+FROM person p
+GROUP BY p.person_first_name
+HAVING COUNT(p.person_first_name)>1; allows us to hone in on data
+
+OR ALIAS column
+
+SELECT COUNT(p.person_first_name) as FIRSTNAMECOUNT, p.person_first_name
+FROM person p
+GROUP BY p.person_first_name
+HAVING FIRSTNAMECOUNT >1; allows us to hone in on data
+
+
+
+
+
