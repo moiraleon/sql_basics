@@ -1,0 +1,14 @@
+SELECT first_name FROM person
+CMD Keyword 
+        Identifier
+
+[ SELECT clause  ][FROM clause]
+
+SELECT statments, separate multiple selects with comma, end with semicolon
+INSERT statment, INSERT INTO table_name(irst_name,last_name) Values('Ted','ebeaar');
+UPDATE statment, UPDATE table_name SET last_name= 'Ybear' WHERE id=1; wihtout WHERE every row will be updated;
+DELETE statment,DELETE FROM table_name WHERE id=1;
+                                      [restriction]
+
+table names are usually singular
+colums are prefixed ny table name ie. person_last_name
