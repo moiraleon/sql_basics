@@ -132,3 +132,22 @@ IF want both left and right nulls ie full ouer joining
 create two requests and join with UNION DISTINCT key word
 
 SELF JOINS are great with hierarchal data where we want to link a manager code to its employees
+
+
+CRUD of sql database modification
+SELECT UPDATE INSERT DELETE
+
+
+INSERT INTO table_name (info..,info..)
+
+BULK INSERT
+
+UPDATE
+..person p
+SET 
+p.first_name='Stank leg"
+WHERE keyvalue = 1;
+
+DELETE is permanent!
+DELETE FROM.table name..WHERE
+
